@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-sans antialiased;
+    background-color: #F6F1E7;
+    color: #1C1610;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-serif;
+  }
+
+  :focus-visible {
+    outline: 2px solid theme('colors.brand.500');
+    outline-offset: 2px;
+  }
+
+  :focus:not(:focus-visible) {
+    outline: none;
+  }
+
+  ::-webkit-scrollbar        { width: 6px; }
+  ::-webkit-scrollbar-track  { background: #F6F1E7; }
+  ::-webkit-scrollbar-thumb  { background: #C27A0E; border-radius: 3px; }
+  ::-webkit-scrollbar-thumb:hover { background: #9C5E09; }
+}
+
+@layer utilities {
+  .text-balance { text-wrap: balance; }
+
+  /* Eyebrow label — used everywhere headings have a category prefix */
+  .eyebrow {
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: theme('colors.brand.600');
+  }
+
+  .eyebrow-light {
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: theme('colors.brand.400');
+  }
+}
