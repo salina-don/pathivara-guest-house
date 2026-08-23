@@ -26,8 +26,8 @@ export default function RoomCard({ room, featured = false }: Props) {
       {/* Image with price + badge overlay */}
       <div className="relative h-60 w-full overflow-hidden sm:h-64">
         <Image
-          src={room.images[0].src}
-          alt={room.images[0].alt}
+          src={room.image}
+          alt={`${room.name} at Pathivara Guest House`}
           fill
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
           className="object-cover transition duration-700 group-hover:scale-105"
