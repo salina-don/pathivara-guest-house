@@ -40,6 +40,15 @@ export default function HomePage() {
         <p className="mt-2 text-xs text-stone-500">Call to check availability and book</p>
       </section>
 
+      {/* ── Front building photo ─────────────────────────────── */}
+      <div className="w-full h-56 sm:h-72 overflow-hidden">
+        <img
+          src="/front-building.jpg"
+          alt="Pathivara Guest House building"
+          className="w-full h-full object-cover"
+        />
+      </div>
+
       {/* ── What we offer ────────────────────────────────────── */}
       <section className="bg-stone-50 py-8 border-b border-stone-200">
         <div className="mx-auto max-w-4xl px-4 sm:px-6">
