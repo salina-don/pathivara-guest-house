@@ -45,7 +45,7 @@ export default function HomePage() {
         <img
           src="/front-building.jpg"
           alt="Pathivara Guest House building"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover object-top"
         />
       </div>
 
