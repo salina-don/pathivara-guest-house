@@ -37,7 +37,7 @@ export const rooms: Room[] = [
   {
     id: "room-23",
     name: "Room 23",
-    bedCount: 2,
+    bedCount: 3,
     hasBathroom: true,
     pricePerNight: 1500,
     image: "/rooms/room-a.jpg",
@@ -45,7 +45,7 @@ export const rooms: Room[] = [
   {
     id: "room-24",
     name: "Room 24",
-    bedCount: 2,
+    bedCount: 3,
     hasBathroom: true,
     pricePerNight: 1500,
     image: "/rooms/room-b.jpg",
@@ -53,9 +53,10 @@ export const rooms: Room[] = [
   {
     id: "room-22",
     name: "Room 22",
-    bedCount: 2,
+    bedCount: 4,
     hasBathroom: false,
     pricePerNight: 1000,
+    note: "Fits up to 4 people",
     image: "/rooms/room-c.jpg",
   },
   {
@@ -69,10 +70,9 @@ export const rooms: Room[] = [
   {
     id: "room-26",
     name: "Room 26",
-    bedCount: 4,
+    bedCount: 2,
     hasBathroom: false,
     pricePerNight: 1000,
-    note: "Fits up to 4 people",
     image: "/rooms/room-e.jpg",
   },
 ];
